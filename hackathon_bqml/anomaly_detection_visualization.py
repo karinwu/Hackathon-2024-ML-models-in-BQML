@@ -45,7 +45,7 @@ def fetch_data(client, start_date, utility):
             demand/1000 AS data,
             is_anomaly,
         FROM
-            `kv-ds-lder-der.hackathon_q1_2024.anomaly_detection_arima_model`
+            `project_id.hackathon_q1_2024.anomaly_detection_arima_model`
         WHERE utility = "{utility}"
         ORDER BY timestamp
     """
