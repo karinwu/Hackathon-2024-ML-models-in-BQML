@@ -1,4 +1,4 @@
-# Hackaton 2024-Q4 - Run ML models in BQML and Vertex AI
+# Hackaton - Run ML models in BQML and Vertex AI
 
 This package was developed with contributions from:
 
