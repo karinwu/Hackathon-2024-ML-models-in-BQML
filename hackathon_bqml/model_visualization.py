@@ -60,7 +60,7 @@ def fetch_data(client, forecast_gbq_table, start_date, utility):
             prediction_interval_lower_bound/1000 AS lower_bound,
             prediction_interval_upper_bound/1000 AS upper_bound
         FROM
-            `kv-ds-lder-der.hackathon_q1_2024.{forecast_gbq_table}`
+            `project_id.hackathon_q1_2024.{forecast_gbq_table}`
         WHERE utility = "{utility}"
         ORDER BY timestamp
     """
