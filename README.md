@@ -1,5 +1,10 @@
 # Hackaton 2024-Q4 - Run ML models in BQML and Vertex AI
 
+This package was developed with contributions from:
+
+- Karin Wu: Arima Plus Model
+- Jose Luis Moscoso: Arima Model
+
 ## Hackathon Idea
 
 As part of the 2024 Hackaton, we explored BQML so that we can execute ML workflows without moving data from GCP. We implemented a pipeline using a dbt packages [dbt_ml](https://github.com/kristeligt-dagblad/dbt_ml/tree/v0.6.1/), so that we query dataset from GBQ, train models in BQML, track results, metrics and parameters, and visualize our results on a [Panel](https://panel.holoviz.org/) dashboard.
