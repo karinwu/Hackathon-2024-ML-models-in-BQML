@@ -9,7 +9,7 @@
           utility,
           SAFE_CAST(demand AS FLOAT64) AS demand
         FROM
-          `kv-ds-lder-der.hackathon_q1_2024.hourly_energy_pjm`
+          `hackathon_q1_2024.hourly_energy_pjm`
         UNPIVOT (
           demand FOR utility IN (
             AEP, COMED, DAYTON, DEOK, DOM, DUQ, EKPC, FE, NI, PJME, PJMW
