@@ -3,7 +3,7 @@
     *
   FROM
     ML.FORECAST(
-      MODEL `kv-ds-lder-der.hackathon_q1_2024.{{ utility }}_arima_plus_xreg`,
+      MODEL `hackathon_q1_2024.{{ utility }}_arima_plus_xreg`,
       STRUCT(100 AS horizon, 0.9 AS confidence_level),
       (
         SELECT
