@@ -3,6 +3,6 @@
     *
   FROM
     ML.EVALUATE(
-      MODEL `kv-ds-lder-der.hackathon_q1_2024.{{ utility }}_arima_plus_xreg`
+      MODEL `project_id.kv-ds-lder-der.hackathon_q1_2024.{{ utility }}_arima_plus_xreg`
     )
 {% endmacro %}

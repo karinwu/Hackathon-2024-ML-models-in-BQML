@@ -3,7 +3,7 @@
     *
   FROM
     ML.FORECAST(
-      MODEL `hackathon_q1_2024.{{ utility }}_arima_plus_xreg`,
+      MODEL `project_id.hackathon_q1_2024.{{ utility }}_arima_plus_xreg`,
       STRUCT(100 AS horizon, 0.9 AS confidence_level),
       (
         SELECT
@@ -11,7 +11,7 @@
           utility,
           SAFE_CAST(demand AS FLOAT64) AS demand
         FROM
-          `hackathon_q1_2024.hourly_energy_pjm`
+          `project_id.hackathon_q1_2024.hourly_energy_pjm`
         UNPIVOT (
           demand FOR utility IN (
             AEP, COMED, DAYTON, DEOK, DOM, DUQ, EKPC, FE, NI, PJME, PJMW
