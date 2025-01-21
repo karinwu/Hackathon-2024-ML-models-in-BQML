@@ -1,4 +1,4 @@
-# Hackaton - Run ML models in BQML and Vertex AI
+# Hackaton - Run ML models in BQML and Vertex AI pipeline
 
 This package was developed with contributions from:
 
