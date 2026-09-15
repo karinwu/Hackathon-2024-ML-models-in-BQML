@@ -16,7 +16,7 @@ packages = [{include = "hackathon_bqml"}]
 [tool.poetry.dependencies]
 pandas = "<3,>=2.2.1"
 python = "~3.10"
-sqlfluff = "~3.2"
+sqlfluff = ">=3.2,<4.3"
 
 # visualization tools 
 matplotlib = "*"
